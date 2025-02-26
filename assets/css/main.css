@@ -99,8 +99,8 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+		background-color: #2e3141; /*imagen fondo- quitar , url("/images/cu2_2.jpg") para ver solo color*/
+		background-image: linear-gradient(rgba(240, 240, 240, 0.4), rgba(224, 224, 224, 0.4)), url("/images/cu2_2.jpg");
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -123,10 +123,10 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #131111; /*texto y candado (no titulos)*/
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16.5pt;
-		font-weight: 300;
+		font-weight: 500; /*ancho*/
 		line-height: 1.65;
 	}
 
@@ -176,13 +176,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
-		color: #ffffff;
+		color: #131111; /*titulos y menu*/
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff !important;
+			color: #a7a2a2 !important; /*se pone gris el boton*/
 		}
 
 		a.special:not(.button) {
@@ -251,7 +251,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #131111; /*titulos*/
 		font-family: Raleway, Helvetica, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
@@ -271,7 +271,7 @@ input, select, textarea {
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			padding-bottom: 1em;
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px rgba(12, 12, 12, 0.255); /*linea entre texto y titulo*/
 		}
 
 	h2 {
@@ -2793,13 +2793,13 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px rgba(255, 255, 255, 0.125);
+			border: solid 1px rgba(29, 28, 28, 0.255); /*lineas tabla nrc*/
 			border-left: 0;
 			border-right: 0;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(255, 255, 255, 0.025);
+				background-color: rgba(210, 210, 210, 0.175); /*relleno intercalado de materia por semestre*/
 			}
 
 		table td {
@@ -2807,7 +2807,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #ffffff;
+			color: #131111; /*color titulo nrc, materia, link*/
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2815,11 +2815,11 @@ input, select, textarea {
 		}
 
 		table thead {
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px rgba(29, 28, 28, 0.255);/*borde superior tabla nrc*/
 		}
 
 		table tfoot {
-			border-top: solid 2px rgba(255, 255, 255, 0.125);
+			border-top: solid 2px rgba(29, 28, 28, 0.255); /*borde inferior tabla nrc*/
 		}
 
 		table.alt {
@@ -2863,11 +2863,11 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: transparent;
+		background-color: #d2d2d2; /*color 2 servicios lados */
 		border-radius: 5px;
 		border: 0;
-		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
-		color: #ffffff !important;
+		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125); /*color borde 2 servicios lados */
+		color: #222121 !important; /*color en negro de los nombres de cada servicio "fit"*/
 		cursor: pointer;
 		display: inline-block;
 		font-family: Raleway, Helvetica, sans-serif;
@@ -2888,7 +2888,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(255, 255, 255, 0.025);
+			background-color: #c3c3c3; /*color hover 2 servicios de los lados*/
 		}
 
 		input[type="submit"]:active,
@@ -2896,7 +2896,7 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(255, 255, 255, 0.075);
+			background-color: rgba(255, 255, 255, 0.8);
 		}
 
 		input[type="submit"].icon:before,
@@ -2905,7 +2905,7 @@ input, select, textarea {
 		button.icon:before,
 		.button.icon:before {
 			margin-right: 0.5em;
-			color: rgba(255, 255, 255, 0.35);
+			color: rgba(255, 255, 255, 0.8);
 		}
 
 		input[type="submit"].primary,
@@ -2913,7 +2913,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #4c5c96;
+			background-color: #d2d2d2; /*color 2 servicios de enmedio*/
 			box-shadow: none;
 		}
 
@@ -2922,7 +2922,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #53639e;
+				background-color: #c3c3c3; /*color hover 2 servicios de enmedio*/
 			}
 
 			input[type="submit"].primary:active,
@@ -2930,7 +2930,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #45558d;
+				background-color: #d2d2d2;
 			}
 
 			input[type="submit"].primary.icon:before,
@@ -3005,7 +3005,7 @@ input, select, textarea {
 
 		.features article {
 			padding: 1.75em 1.75em 0.1em 1.75em ;
-			background-color: #353849;
+			background-color: #d2d2d2; /*Nota1, Nota2,3,4*/
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(50% - 1.5em);
@@ -3076,7 +3076,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
+		background-color: rgba(45, 58, 105, 0.95); /*header aparece*/
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3157,11 +3157,11 @@ input, select, textarea {
 					}
 
 					#header nav a[href="#menu"]:hover {
-						background-color: rgba(255, 255, 255, 0.025);
+						background-color: rgba(255, 255, 255, 0.255); /*hover del boton menu*/
 					}
 
 					#header nav a[href="#menu"]:active {
-						background-color: rgba(255, 255, 255, 0.075);
+						background-color: rgba(158, 150, 150, 0.255); /*hover temporal del boton menu*/
 					}
 
 		#header.alt {
@@ -3258,7 +3258,7 @@ input, select, textarea {
 		-ms-user-select: none;
 		user-select: none;
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-		background: rgba(46, 49, 65, 0.8);
+		background: rgba(195, 195, 195); /*fondo color del menu desplegable*/
 		cursor: default;
 		height: 100%;
 		left: 0;
@@ -3281,7 +3281,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #4c5c96;
+			background: #e0e0e0; /*caja de menu*/
 			border-radius: 5px;
 			display: block;
 			max-width: 100%;
@@ -3291,7 +3291,7 @@ input, select, textarea {
 		}
 
 		#menu h2 {
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px rgba(37, 36, 36, 0.8); /*linea del menu desplegable*/
 			padding-bottom: 1em;
 		}
 
@@ -3337,9 +3337,11 @@ input, select, textarea {
 				}
 
 					#menu .links li a:hover {
-						background: #45558d;
+						background: #d2d2d2;
 					}
-
+					#menu .links li p:hover {
+						background: #d2d2d2;
+					}
 		@media screen and (max-width: 736px) {
 
 			#menu .inner {
@@ -3429,7 +3431,7 @@ input, select, textarea {
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px rgba(44, 43, 43, 0.255); /*linea debajo de Bienvenido!*/
 			font-size: 2.25em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
@@ -3455,24 +3457,22 @@ input, select, textarea {
 			opacity: 1;
 			font-family: Raleway, Helvetica, sans-serif;
 			font-size: 1em;
-			font-weight: 200;
+			font-weight: 700; /*ancho letra debajo del bienvenido*/
 			letter-spacing: 0.1em;
 			line-height: 2;
 			text-transform: uppercase;
 		}
 
 		@media screen and (max-width: 1280px) {
-
+			/* fondo bienvenido redimensionado*/
 			#banner {
-				padding: 7em 0 8.25em 0 ;
+				padding: 7em 0 8.25em 0;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto,
- cover;
-				background-position: center,
- center;
+				background-image: linear-gradient(to top, rgba(240, 240, 240, 0.4), rgba(224, 224, 224, 0.4)), url("/images/cu2_2.jpg");
+				background-size: auto, cover;
+				background-position: center, center;
 				margin-bottom: -6.5em;
-			}
+			}			
 
 		}
 
@@ -3558,7 +3558,7 @@ input, select, textarea {
 		}
 
 		#wrapper > header h2 {
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px rgba(44, 43, 43, 0.255); /*linea debajo de Nosotros!*/
 			font-size: 2em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
@@ -3574,11 +3574,11 @@ input, select, textarea {
 		}
 
 	@media screen and (max-width: 1280px) {
-
+     /*no hace nada aparentemente*/
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-color: #4fc93f;
+			background-image: linear-gradient(to top, rgba(76, 182, 50, 0.8), rgba(46, 196, 41, 0.8)), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
@@ -3625,21 +3625,22 @@ input, select, textarea {
 	}
 
 	.wrapper {
-		background-color: #2e3141;
+		background-color: #ebedf1; /*noticias*/
 		margin: 6.5em 0;
 		position: relative;
 	}
 
 		.wrapper:before, .wrapper:after {
-			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141%3B' /%3E%3C/svg%3E");
+			background-color:#f0f0f0/*abajo de noticias, antes: rgba(255, 255, 255, 0.9)*/ 
+			/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141%3B' /%3E%3C/svg%3E");*/
 		}
 
 		.wrapper:before {
-			box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
+			box-shadow: inset 0 -1px 0 0 #e1e1e1, 0 1px 0 0 #e1e1e1;
 		}
 
 		.wrapper:after {
-			box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
+			box-shadow: inset 0 -1px 0 0 #e1e1e1, 0 1px 0 0 #e1e1e1;
 		}
 
 		.wrapper:before, .wrapper:after {
@@ -3687,27 +3688,29 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #353849;
+			background-color: #e9bc27;
 		}
 
 			.wrapper.style2:before, .wrapper.style2:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23353849%3B' /%3E%3C/svg%3E");
+				background-color: #d8d4c7; /*sin definir- permite el color debajo de cu2 tu nueva casa*/
+				/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23353849%3B' /%3E%3C/svg%3E");*/
 			}
 
 			.wrapper.style2:before {
-				box-shadow: inset 0 -1px 0 0 #353849, 0 1px 0 0 #353849;
+				box-shadow: inset 0 -1px 0 0 #c707bd, 0 1px 0 0 #890fa1; /*no hace nada aparentemente*/
 			}
 
 			.wrapper.style2:after {
-				box-shadow: inset 0 -1px 0 0 #353849, 0 1px 0 0 #353849;
+				box-shadow: inset 0 -1px 0 0 #9c34f1, 0 1px 0 0 #8512a8; /*no hace nada aparentemente*/
 			}
 
 		.wrapper.style3 {
-			background-color: #3d4051;
+			background-color: #3b52d1; /*no hace nada aparentemente*/
 		}
 
 			.wrapper.style3:before, .wrapper.style3:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%233d4051%3B' /%3E%3C/svg%3E");
+				background-color: #ece2e2; /*sin definir- la linea de abajo permite el color debajo de visita calendario*/
+				/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%233d4051%3B' /%3E%3C/svg%3E");*/
 			}
 
 			.wrapper.style3:before {
@@ -3751,35 +3754,37 @@ input, select, textarea {
 			}
 
 		.wrapper.style6 {
-			background-color: #555867;
+			background-color: #d0e2d2;
 		}
 
 			.wrapper.style6:before, .wrapper.style6:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23555867%3B' /%3E%3C/svg%3E");
+				background-color: #f0f0f0; /*sin definir*/
+				/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23555867%3B' /%3E%3C/svg%3E");*/
 			}
 
 			.wrapper.style6:before {
-				box-shadow: inset 0 -1px 0 0 #555867, 0 1px 0 0 #555867;
+				box-shadow: inset 0 -1px 0 0 #e8e9ec, 0 1px 0 0 #d8dae2;
 			}
 
 			.wrapper.style6:after {
-				box-shadow: inset 0 -1px 0 0 #555867, 0 1px 0 0 #555867;
+				box-shadow: inset 0 -1px 0 0 #dbe2d9, 0 1px 0 0 #d4dad0;
 			}
 
 		.wrapper.spotlight {
-			background-color: #4c5c96;
+			background-color: #ebedf1;/*cu2 tu nueva casa*/
 		}
 
 			.wrapper.spotlight:before, .wrapper.spotlight:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234c5c96%3B' /%3E%3C/svg%3E");
+				background-color: #e1e1e1; /*abajo de bienvenido*/
+				/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234c5c96%3B' /%3E%3C/svg%3E");*/
 			}
 
 			.wrapper.spotlight:before {
-				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+				box-shadow: inset 0 -1px 0 0 #d6d8df, 0 1px 0 0 #d8dbe2;
 			}
 
 			.wrapper.spotlight:after {
-				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+				box-shadow: inset 0 -1px 0 0 #dee0eb, 0 1px 0 0 #dee0e7;
 			}
 
 			.wrapper.spotlight .inner {
@@ -3827,43 +3832,46 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight.style2 {
-				background-color: #45558d;
+				background-color: #ebedf1; /*conoce más sobre tu facultad*/
 			}
 
 				.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2345558d%3B' /%3E%3C/svg%3E");
+					background-color: #f0f0f0; /*derecha abajo de cu2 tu nueva casa*/
+					/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2345558d%3B' /%3E%3C/svg%3E");*/
 				}
 
 				.wrapper.spotlight.style2:before {
-					box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
+					box-shadow: inset 0 -1px 0 0 #dfe1e6, 0 1px 0 0 #dfe1e9;
 				}
 
 				.wrapper.spotlight.style2:after {
-					box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
+					box-shadow: inset 0 -1px 0 0 #dfe1e7, 0 1px 0 0 #e9eaf0;
 				}
 
 			.wrapper.spotlight.style3 {
-				background-color: #3f4e85;
+				background-color: #ebedf1; /*vsita el calendario*/
 			}
 
 				.wrapper.spotlight.style3:before, .wrapper.spotlight.style3:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%233f4e85%3B' /%3E%3C/svg%3E");
+					background-color: #f0f0f0;/*izquierda debajo conoce mas sobre tu facultad*/
+					/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%233f4e85%3B' /%3E%3C/svg%3E");*/
 				}
 
 				.wrapper.spotlight.style3:before {
-					box-shadow: inset 0 -1px 0 0 #3f4e85, 0 1px 0 0 #3f4e85;
+					box-shadow: inset 0 -1px 0 0 #e7e7df, 0 1px 0 0 #e6e9e0;
 				}
 
 				.wrapper.spotlight.style3:after {
-					box-shadow: inset 0 -1px 0 0 #3f4e85, 0 1px 0 0 #3f4e85;
+					box-shadow: inset 0 -1px 0 0 #e7e7df, 0 1px 0 0 #e7e9ee;
 				}
 
 			.wrapper.spotlight.style4 {
-				background-color: #39477c;
+				background-color: #dbece1; /*sin definir*/
 			}
 
 				.wrapper.spotlight.style4:before, .wrapper.spotlight.style4:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2339477c%3B' /%3E%3C/svg%3E");
+					background-color: #f0f0f0; /*sin definir*/
+					/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2339477c%3B' /%3E%3C/svg%3E");*/
 				}
 
 				.wrapper.spotlight.style4:before {
@@ -3875,11 +3883,12 @@ input, select, textarea {
 				}
 
 			.wrapper.spotlight.style5 {
-				background-color: #324072;
+				background-color: #dadeee; /*sin definir*/
 			}
 
 				.wrapper.spotlight.style5:before, .wrapper.spotlight.style5:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23324072%3B' /%3E%3C/svg%3E");
+					background-color: #f0f0f0; /*sin definir*/
+					/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23324072%3B' /%3E%3C/svg%3E");*/
 				}
 
 				.wrapper.spotlight.style5:before {
@@ -3891,11 +3900,12 @@ input, select, textarea {
 				}
 
 			.wrapper.spotlight.style6 {
-				background-color: #2d3a69;
+				background-color: #bfcabf; /*sin definir*/
 			}
 
 				.wrapper.spotlight.style6:before, .wrapper.spotlight.style6:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232d3a69%3B' /%3E%3C/svg%3E");
+					background-color: #f0f0f0; /*sin definir*/
+					/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232d3a69%3B' /%3E%3C/svg%3E");*/
 				}
 
 				.wrapper.spotlight.style6:before {
@@ -4160,7 +4170,7 @@ input, select, textarea {
 		justify-content: space-between;
 		align-items: center;
 		padding: 10px;
-		background-color: #2d3a69;
+		background-color: #2d3a69; /*color azul del footer*/
 		text-align: center;
 	}
 	
@@ -4199,7 +4209,7 @@ input, select, textarea {
 	
 	.menu a {
 		text-decoration: none;
-		color: #fff;
+		color: #fff; /*color terminos*/
 		font-size: 12px;
 	}
 	
