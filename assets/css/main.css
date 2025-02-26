@@ -100,7 +100,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141; /*imagen fondo- quitar , url("/images/cu2_2.jpg") para ver solo color*/
-		background-image: linear-gradient(rgba(240, 240, 240, 0.4), rgba(224, 224, 224, 0.4)), url("/images/cu2_2.jpg");
+		background-image: linear-gradient(rgba(240, 240, 240, 0.4), rgba(224, 224, 224, 0.4)), url("/images/CU2.JPG");
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -261,7 +261,7 @@ input, select, textarea {
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
+			color: #d0e2d2; /*ciberseguridad BUAP header*/
 			text-decoration: none;
 			border-bottom: 0;
 		}
@@ -3083,7 +3083,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(45, 58, 105, 0.95); /*header aparece*/
+		background-color: rgba(18, 46, 72, 0.95); /*header aparece*/
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3574,7 +3574,7 @@ input, select, textarea {
 		#wrapper > header p {
 			font-family: Raleway, Helvetica, sans-serif;
 			font-size: 1em;
-			font-weight: 200;
+			font-weight: 700; /*ancho letra debajo del nosotros y otros, excepto bienvenidos*/
 			letter-spacing: 0.1em;
 			line-height: 2;
 			text-transform: uppercase;
@@ -4177,7 +4177,7 @@ input, select, textarea {
 		justify-content: space-between;
 		align-items: center;
 		padding: 10px;
-		background-color: #2d3a69; /*color azul del footer*/
+		background-color: #122E48; /*color azul del footer*/
 		text-align: center;
 	}
 	
@@ -4192,7 +4192,6 @@ input, select, textarea {
 
 	.footer-info-buap p {
 		font-size: 13px;
-		
 	}
 	
 	.footer-logo-buap img, 
@@ -4202,16 +4201,22 @@ input, select, textarea {
 	}
 	
 	.menu {
+		display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos en la columna */
+		/*
 		list-style: none;
 		padding: 0;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-	
+	    */
 	}
 	
 	.menu li {
 		display: inline;
+		width: 100%; /* O un ancho menor si quieres que no ocupe todo */
+        text-align: center;
 	}
 	
 	.menu a {
@@ -4230,5 +4235,12 @@ input, select, textarea {
 			flex-direction: column;
 			align-items: center;
 		}
+	}
+	
+	.texto-blanco {
+		color: white !important;
+		font-size: 12px;
+		text-align: justify;
+		display: block;
 	}
 	
