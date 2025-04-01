@@ -2460,6 +2460,13 @@ input, select, textarea {
 				height: 10%;
 			}
 
+			.image.nofit img{
+				position: relative;
+				left: 38%;
+				width: 250%;
+				height: 150%;
+			}
+
 		.image.main {
 			display: block;
 			margin: 0 0 3em 0;
